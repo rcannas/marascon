@@ -37,3 +37,19 @@ a {
 footer {
   padding: 5rem 0;
 }
+
+.separator {
+  background: linear-gradient(to bottom, $black 0%, #{fade-out($black, .5)} 75%, rgba(255,0,0,0));
+  // background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%, $black 100%), url('../img/bg-masthead.jpg');
+  min-height: 20rem;
+}
+
+.sepia {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}

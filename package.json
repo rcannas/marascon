@@ -17,7 +17,6 @@
         "gulp-js": "gulp js",
         "gulp-default": "gulp",
         "gulp-dev": "gulp dev"
-        
     },
     "homepage": "https://startbootstrap.com/template-overviews/grayscale",
     "bugs": {
