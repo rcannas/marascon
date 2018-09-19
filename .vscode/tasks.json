@@ -10,6 +10,14 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "npm",
+            "script": "gulp-dist",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }

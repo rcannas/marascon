@@ -120,3 +120,31 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+gulp.task('dist', ['default'], function() {
+  
+  gulp.src([
+    './vendor/jquery-easing/*.min.js'
+  ])
+  .pipe(gulp.dest('./dist/vendor/jquery-easing'))
+
+  gulp.src([
+    './css/*.min.css'
+  ])
+  .pipe(gulp.dest('./dist/css'))
+
+  gulp.src([
+    './img/*.*'
+  ])
+  .pipe(gulp.dest('./dist/img'))
+
+  gulp.src([
+    './js/*.min.js'
+  ])
+  .pipe(gulp.dest('./dist/js'))
+
+  gulp.src([
+    './*.html'
+  ])
+  .pipe(gulp.dest('./dist'))
+});
