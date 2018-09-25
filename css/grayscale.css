@@ -184,11 +184,6 @@
   padding: 5rem 0 5rem 0;
 }
 
-.projects-section iframe {
-  width: 700px;
-  height: 400px;
-}
-
 .projects-section .featured-text {
   padding: 2rem;
 }
@@ -305,6 +300,32 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   color: #3c6360;
+}
+
+iframe {
+  width: 300px;
+  height: 220px;
+}
+
+@media (min-width: 500px) {
+  iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 640px) {
+  iframe {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  iframe {
+    width: 600px;
+    height: 450px;
+  }
 }
 
 .bg-black {
